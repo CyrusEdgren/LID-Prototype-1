@@ -54,7 +54,7 @@ public class CameraController : MonoBehaviour
         Camera.main.orthographicSize -= Camera.main.orthographicSize * Input.GetAxis ("Mouse ScrollWheel");
 		Camera.main.orthographicSize = Mathf.Clamp (Camera.main.orthographicSize, 5f, 15f);
 
-        //Camera movement
+        //Camera keyboard movement
         Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
         Vector3 upMovement = up * moveSpeed * Time.deltaTime * Input.GetAxis("Vertical");
 
